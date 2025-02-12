@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "TTLakes";
+    font-weight:bold;
+    src: 
+      url("fonts/TTLakes-Bold.woff") format("woff");
+  }
+  @font-face {
+    font-family: "TTLakes";
+    font-weight: 500;
+    font-style: normal;
+        src: 
+      url("fonts/TTLakes-Medium.woff") format("woff");
+  }
+  @font-face {
+    font-family: "TTLakes";
+    font-weight: 400;
+    font-style: normal;
+    src: 
+      url("fonts/TTLakes-Regular.woff") format("woff");
+  }
+
+ html {
+    font-family: 'TTLakes';
+    width:100%;
+    max-height:100%;
+}
+
+.container {
+    width: 320px;
+    height:100vh;
+    margin-left:24px;
+    position: fixed;
+    left:0;
+    top:0;
+    box-shadow: 16px 0px 52px 0px #0E185033,
+                -2px 0px 4px 0px #454F7E05;
+    padding: 23px 24px 32px;
+    margin: -5px;
+    overflow-y: auto;
+}
+
+ul, li {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+button {
+    border: none; 
+    padding: 0; 
+    background: none; 
+    transition: opacity 0.3s ease-in-out;   
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.nav {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center; 
+}
+
+.nav__item {
+    margin-right:16px;
+}
+
+.header1 {
+    margin-bottom:46px;
+}
+
+.menu {
+    margin-bottom: 244px;
+}
+
+.menu__item {
+    color:#1B1C21;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight:500;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.menu__item:hover::before {
+    content:"";
+    display:block;
+    position:absolute;
+    height: 32px;
+    width:4px;
+    background-color:#41F6D7;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    transform: translate(-15px,-15%);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:#7E7E82;
+}
+
+.nav2__list {
+    display: flex;
+    justify-content:flex-start;
+}
+
+.nav2__item {
+    margin-right:16px;
+}
+
+.email {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color:#1B1C21;
+    font-weight:500;
+    margin-bottom:12px;
+}
+
+.phone {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color:#1B1C21;
+    font-weight: bold;
+    margin:0;
+}
+
+.lang-button input[type=radio] {
+    width:0; 
+    height:0;
+    overflow: hidden;
+}
+
+.lang-button label:hover {
+    cursor: pointer;
+}
+
+.lang-button label {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color:#1B1C21;
+    margin-top:40px;
+}
+
+.lang-button input[type="radio"]:checked + span {
+    color: #7E7E82;
+}
+
+footer {
+    position: relative;
+}
+
+.lang-button {
+    margin-top: 40px;
+    margin-bottom:32px;
+    margin-left:-10px;
+}
