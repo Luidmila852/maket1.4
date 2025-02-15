@@ -1,97 +1,81 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-    <header class="header1">
-    <nav class="nav">
-      <ul class="nav__list nav__list--left">
-        <li class="nav__item"> 
-          <button>
-            <img src="img/burger.svg" width="40" height="40"  alt="назад">
-            </img> 
-          </button>
-        </li>
-        <li class="nav__item"> 
-          <button>
-            <img src="img/logo.svg" width="96.55" height="50.81"  alt="логотип">
-            </img> 
-          </button>
-        </li>
-        </ul>
-        <ul class="nav__list nav__list--right">
-        <li class="nav__item">
-          <button>
-            <img src="img/search2.svg" width="40" height="40"  alt="поиск">
-            </img> 
-          </button>
-        </li>
-      </ul>
-    </nav>
+    <aside class="container">
+      <header class="header1">
+        <button class="header1__back">
+          <img src="img/burger.svg" width="40" height="40" alt="назад" />
+        </button>
+        <img
+          src="img/logo.svg"
+          width="96.55"
+          height="50.81"
+          alt="логотип"
+          class="header1__logo"
+        />
+        <button class="header1__search">
+          <img src="img/search2.svg" width="40" height="40" alt="поиск" />
+        </button>
       </header>
-      <nav class="menu">
-      <ul class="menu__list">
-      <li><a href="#" class="menu__item">Ремонт техники</a></li>
-      <li><a href="#" class="menu__item">Услуги и сервисы</a></li>
-      <li><a href="#" class="menu__item">Корпоративным клиентам </a></li>
-      <li><a href="#" class="menu__item">Продавцам техники</a></li>
-      <li><a href="#" class="menu__item">Партнерам</a></li>
-      <li><a href="#" class="menu__item">Производителям</a></li>
-      <li><a href="#" class="menu__item">Наши сервисные центры</a></li>
-      <li><a href="#" class="menu__item">Контакты<a></li>
-      </ul>
-      </nav>
-        <main>
-    </main>
 
-    <footer>
-      <header class="header2">
-        <nav class="nav2">
-          <ul class="nav2__list">
-            <li class="nav2__item"> 
-              <button>
-                <img src="img/phone.svg" width="40" height="40"  alt="вызов">
-                </img> 
-              </button>
+      <main>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li>
+              <a href="#" class="menu__item">Ремонт техники</a>
             </li>
-            <li class="nav2__item"> 
-              <button>
-                <img src="img/chat.svg" width="40" height="40"  alt="чат">
-                </img> 
-              </button>
+            <li>
+              <a href="#" class="menu__item">Услуги и сервисы</a>
             </li>
-            <li class="nav2__item">
-              <button>
-                <img src="img/profile.svg" width="40" height="40"  alt="профиль">
-                </img> 
-              </button>
+            <li>
+              <a href="#" class="menu__item">Корпоративным клиентам </a>
+            </li>
+            <li>
+              <a href="#" class="menu__item">Продавцам техники</a>
+            </li>
+            <li>
+              <a href="#" class="menu__item">Партнерам</a>
+            </li>
+            <li>
+              <a href="#" class="menu__item">Производителям</a>
+            </li>
+            <li>
+              <a href="#" class="menu__item">Наши сервисные центры</a>
+            </li>
+            <li>
+              <a href="#" class="menu__item">Контакты </a>
             </li>
           </ul>
-        </nav> 
-     </header>
-    <p class="email" lang="en">mail@cps.com</p>
-    <p class="phone">8 800 890 8900</p>
- 
-  
-    <div class="lang-button">
-      <label for="ru">
-        <input type="radio" name="language" value="RU" id="ru">
-        <span>RU</span>
-      </label >
-      <label for="en">
-        <input type="radio" name="language" value="EN" id="en">
-        <span lang="en">EN</span>
-      </label>
-      <label for="ch">
-        <input type="radio" name="language" value="CH" id="ch">
-        <span lang="ch">CH</span>
-      </label>
-   
-    </div>
-    </footer>
-    </div>
+        </nav>
+      </main>
+      <footer>
+        <div class="header2">
+          <button class="header2__item">
+            <img src="img/phone.svg" width="40" height="40" alt="вызов" />
+          </button>
+          <button class="header2__item">
+            <img src="img/chat.svg" width="40" height="40" alt="чат" />
+          </button>
+          <button class="header2__item">
+            <img src="img/profile.svg" width="40" height="40" alt="профиль" />
+          </button>
+        </div>
+
+        <address class="contacts">
+          <a href="mailto:mail@cps.com" class="contacts__email">mail@cps.com</a>
+          <a href="tel:88008908900" class="contacts__phone">8 800 890 8900</a>
+        </address>
+
+        <div class="lang">
+          <button class="lang__btn">RU</button>
+          <button class="lang__btn">EN</button>
+          <button class="lang__btn">CH</button>
+        </div>
+      </footer>
+    </aside>
   </body>
 </html>
