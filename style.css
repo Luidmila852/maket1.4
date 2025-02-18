@@ -42,44 +42,38 @@ li {
   margin: 0;
 }
 
-.header1__back,
-.header1__search,
-.header2__item,
-.lang__btn {
+button {
   border: none;
   padding: 0;
   background: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__item,
+.actions__item,
+.lang__btn {
   transition: opacity 0.3s ease-in-out;
 }
 
-.header1__back:hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.header1__search:hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.header2__item:hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.lang__btn:hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.header1 {
+.header {
   display: flex;
   justify-content: space-between;
-  align-content: center;
 }
 
-.header1__logo {
-  transform: translate(-40px);
+.header__item {
+  align-self: center;
+}
+
+.header__item--logo {
+  transform: translate(-45px);
+}
+
+.header__item:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 .menu {
@@ -109,27 +103,38 @@ li {
   transform: translate(-15px, -15%);
 }
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
+.menu__item:hover {
+  cursor: pointer;
   color: #7e7e82;
 }
 
-.header2 {
+.actions {
   display: flex;
   justify-content: flex-start;
   margin: 0;
 }
 
-.header2__item {
+.actions__item {
   margin-right: 16px;
+}
+
+.actions__item:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
+}
+
+.contacts__email:hover {
+  color: #7e7e82;
+  cursor: pointer;
+}
+.contacts__phone:hover {
+  color: #7e7e82;
+  cursor: pointer;
 }
 
 .contacts__email {
@@ -153,25 +158,25 @@ a:hover {
   margin: 0;
 }
 
+footer {
+  position: relative;
+}
+
+.lang {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+.lang__btn:hover {
+  opacity: 0.7;
+  color: #7e7e82;
+  cursor: pointer;
+}
+
 .lang__btn {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1b1c21;
   margin-right: 7px;
-}
-
-.lang__btn:hover {
-  cursor: pointer;
-  color: #7e7e82;
-}
-
-footer {
-  position: relative;
-}
-
-.lang {
-  display: inline-block;
-  margin-top: 40px;
-  margin-bottom: 32px;
 }
