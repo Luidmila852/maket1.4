@@ -35,24 +35,24 @@ html {
   overflow-y: auto;
 }
 
-ul,
-li {
+.list-reset {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-button {
+.button-reset {
   border: none;
   padding: 0;
   background: none;
 }
 
-a {
+.a-reset {
   text-decoration: none;
 }
 
-.header__item,
+.button,
+.logo,
 .actions__item,
 .lang__btn {
   transition: opacity 0.3s ease-in-out;
@@ -61,17 +61,19 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-}
-
-.header__item {
   align-self: center;
 }
 
-.header__item--logo {
+.logo {
   transform: translate(-45px);
 }
 
-.header__item:hover {
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.button:hover {
   cursor: pointer;
   opacity: 0.7;
 }
@@ -82,6 +84,7 @@ a {
 }
 
 .menu__item {
+  text-decoration: none;
   color: #1b1c21;
   font-size: 16px;
   line-height: 24px;
